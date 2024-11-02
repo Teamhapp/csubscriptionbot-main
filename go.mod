@@ -3,7 +3,7 @@ module csubscriptionbot
 go 1.21.4
 
 require (
-	github.com/PaulSonOfLars/gotgbot/v2 v2.0.0-rc.23
+	github.com/PaulSonOfLars/gotgbot/v2 v2.0.0-rc.29
 	github.com/redis/go-redis/v9 v9.3.0
 )
 
