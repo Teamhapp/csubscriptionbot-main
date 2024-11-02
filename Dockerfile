@@ -3,7 +3,7 @@ WORKDIR /csubscriptionbot
 RUN apk update && apk upgrade --available && sync && apk add --no-cache --virtual .build-deps
 COPY . .
 RUN go build -ldflags="-w -s" .
-FROM alpine:3.18.4
+FROM alpine:3.20.3
 RUN apk update && apk upgrade --available && sync
 COPY --from=builder /csubscriptionbot/csubscriptionbot /csubscriptionbot
 ENTRYPOINT ["/csubscriptionbot"]
